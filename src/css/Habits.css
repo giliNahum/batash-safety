@@ -1,0 +1,613 @@
+.title-Habits {
+  position: relative;
+  top: 5rem;
+}
+
+/* HabitsStart */
+
+.text-HabitsStart {
+  font-size: 1.7rem;
+  position: relative;
+  top: 7rem;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.gal-HabitsStart {
+  cursor: pointer;
+  position: relative;
+  top: 13rem;
+}
+
+@media (max-height: 650px) {
+  .gal-HabitsStart {
+    cursor: pointer;
+    top: 9rem;
+  }
+}
+
+/* DrivingHabits */
+
+.title-DrivingHabits {
+  position: relative;
+  top: 7rem;
+  left: 15rem;
+}
+
+.DrivingHabits-content {
+  background-color: white;
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  white-space: pre-line;
+  text-align: right;
+  border-radius: 10px;
+  position: relative;
+  top: 7rem;
+}
+
+.driverTour-btn {
+  color: #fff2b4;
+  border: 2px solid #fff2b4;
+  background-color: #e69907;
+  border-radius: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-family: "assistant-bold";
+  position: relative;
+  bottom: 10.7rem;
+  right: 8rem;
+  cursor: pointer;
+  animation: pulse 1.8s ease infinite;
+}
+
+.driverTour-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+  background-color: #073799;
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+  white-space: pre-line;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.DrivingHabits-content1 {
+  background-color: #e69907;
+  color: white;
+}
+.DrivingHabits-content2 {
+  background-color: #073799;
+  color: white;
+}
+
+/* EffectDrive */
+.carTriangle {
+  position: relative;
+  bottom: 2rem;
+}
+.EffectDrive-item {
+  background-color: #073799;
+  color: #ffffff;
+  padding: 1rem;
+  border: 4px solid white;
+  position: relative;
+  border-radius: 20px;
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: assistant-bold;
+  cursor: pointer;
+}
+
+.EffectDrive-driver {
+  top: 5rem;
+  right: 15rem;
+}
+.EffectDrive-road {
+  top: 31rem;
+  left: 6rem;
+}
+.EffectDrive-car {
+  top: 27rem;
+  right: 37rem;
+}
+
+.EffectDrive-text {
+  font-size: 1.8rem;
+  position: relative;
+  bottom: 9rem;
+}
+
+@media (max-height: 650px) {
+  .carTriangle {
+    position: relative;
+    bottom: 12rem;
+    transform: scale(0.55);
+  }
+  .EffectDrive-driver {
+    top: 5rem;
+    right: 16.5rem;
+  }
+  .EffectDrive-road {
+    top: 20rem;
+    right: 1rem;
+  }
+  .EffectDrive-car {
+    top: 16rem;
+    right: 33rem;
+  }
+  .EffectDrive-text {
+    bottom: 25rem;
+  }
+}
+
+/* Obstacle */
+
+.obstacleCards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+
+.obstacleCard {
+  width: 10rem;
+  border-radius: 4px;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+.obstacleCard-title {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: #0b43b8;
+  color: white;
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 1.2rem 0.4rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.obstacleCard.orange .obstacleCard-title {
+  background: #e39b00;
+}
+
+.obstacleCard-content {
+  background: inherit;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+  padding: 0 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.obstacleCard.open .obstacleCard-content {
+  max-height: 20rem;
+  opacity: 1;
+  padding: 14px 10px 18px;
+}
+
+.obstacleCard:not(.orange) .obstacleCard-content {
+  background: #0b43b8;
+  color: white;
+}
+
+.obstacleCard.orange .obstacleCard-content {
+  background: #e39b00;
+  color: white;
+}
+
+.Obstacle-cards {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  top: 16rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.text-Obstacle {
+  font-size: 1.6rem;
+  position: relative;
+  top: 5rem;
+}
+
+.obstacle-note {
+  font-size: 1.3rem;
+  position: relative;
+  top: 27rem;
+}
+
+/* DriveDanger */
+
+.driveDangerImg {
+  height: 30rem;
+  position: relative;
+  top: 9rem;
+}
+
+.dangerBox {
+  padding: 0.875rem 1.125rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 12rem;
+  position: relative;
+}
+
+.redBox {
+  background: #d6342c;
+  color: white;
+  border: 0.1875rem solid white;
+}
+
+.orangeBox {
+  background: #e79c00;
+  color: white;
+  border: 0.1875rem solid white;
+}
+
+.blueBox {
+  background: #1f4aa8;
+  color: white;
+  border: 0.1875rem solid white;
+}
+
+.whiteBox {
+  background: #e6edf4;
+  color: #1f4aa8;
+  border: 0.1875rem solid #1f4aa8; /* 3px */
+}
+
+.dangerBox0 {
+  bottom: 26rem;
+  right: 6rem;
+}
+.dangerBox1 {
+  bottom: 26rem;
+  right: 24rem;
+}
+.dangerBox2 {
+  bottom: 21rem;
+  left: 13rem;
+}
+.dangerBox3 {
+  bottom: 23rem;
+  right: 24rem;
+}
+.dangerBox4 {
+  bottom: 16rem;
+  right: 21rem;
+}
+.dangerBox5 {
+  bottom: 23rem;
+  left: 10rem;
+}
+.dangerBox6 {
+  bottom: 22rem;
+  right: 6rem;
+}
+
+@media (max-height: 650px) {
+  .driveDangerImg {
+    height: 20rem;
+    top: 8rem;
+  }
+  .dangerBox {
+    padding: 0.8rem 1.1rem;
+    font-size: 1.2rem;
+    max-width: 10rem;
+  }
+  .dangerBox0 {
+    bottom: 16.5rem;
+    right: 6rem;
+  }
+  .dangerBox1 {
+    bottom: 16rem;
+    right: 20rem;
+  }
+  .dangerBox2 {
+    bottom: 13rem;
+    left: 8rem;
+  }
+  .dangerBox3 {
+    bottom: 15rem;
+    right: 20rem;
+  }
+  .dangerBox4 {
+    bottom: 11rem;
+    right: 18rem;
+  }
+  .dangerBox5 {
+    bottom: 16rem;
+    left: 6rem;
+  }
+  .dangerBox6 {
+    bottom: 16rem;
+    right: 6rem;
+  }
+}
+
+/* DriveSteps */
+
+.DriveSteps-text {
+  font-size: 1.8rem;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%);
+  top: 7rem;
+  max-width: 55rem;
+}
+.cards-DriveSteps {
+  display: flex;
+  position: relative;
+  top: 13rem;
+}
+
+/* SafetySystem */
+
+.SafetySystem-note {
+  font-size: 1.3rem;
+  position: relative;
+  top: 5rem;
+}
+
+.SafetySystem-grid {
+  margin: 2.2rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2rem;
+  position: relative;
+  top: 5rem;
+  z-index: 2;
+}
+
+.SafetySystem-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition:
+    opacity 0.25s ease,
+    filter 0.25s ease,
+    transform 0.2s ease;
+}
+
+.SafetySystem-item:hover {
+  transform: scale(1.03);
+}
+
+.SafetySystem-item.visited {
+  filter: grayscale(100%);
+  opacity: 0.45;
+}
+
+.SafetySystem-item-img {
+  width: 10rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.SafetySystem-item-title {
+  margin-top: 0.45rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.gridDimmed {
+  opacity: 0.4;
+}
+
+.SafetySystem-popup {
+  position: fixed;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  min-height: 17rem;
+  background: #073799;
+  color: white;
+  border-radius: 0.35rem;
+  z-index: 10;
+  padding: 0.9rem 0.9rem 1rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+.SafetySystem-popup-title {
+  margin: 0.4rem 0 0.9rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.SafetySystem-popup-text {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+/* Directions */
+
+.DirectionsTitle {
+  font-family: "rubik-black";
+  font-size: 2.6rem;
+  color: #073799;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 6rem;
+  left: 15rem;
+}
+
+.roadBackground {
+  position: relative;
+  top: 7rem;
+  width: 47rem;
+  height: 34rem;
+  background-image: url("../assets/images/road-background.svg");
+  background-size: cover;
+  font-size: 1.68rem;
+  padding: 6rem;
+  text-align: start;
+  color: black;
+}
+
+.warningText {
+  color: #e69907;
+  font-family: "assistant-bold";
+}
+
+.boldText {
+  font-family: "assistant-bold";
+}
+
+.highlightText {
+  font-family: "assistant-bold";
+  color: #e69907;
+}
+
+.DirectionsWarningSign {
+  width: 7rem;
+  position: relative;
+  bottom: 3rem;
+  right: 29rem;
+  cursor: pointer;
+  animation: pulse 1.8s ease infinite;
+  z-index: 1;
+}
+
+.DirectionsBubble {
+  width: 8rem;
+  position: relative;
+  bottom: 5rem;
+  right: 17rem;
+}
+
+.xbtn {
+  font-family: "fredoka";
+  color: #fff2b4;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.xbtn-Directions {
+  color: #fff;
+  position: absolute;
+  top: 5rem;
+  right: 9.5rem;
+    font-family: "fredoka";
+  color: #fff2b4;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.warning1-container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 5;
+}
+
+@media (max-width: 1500px) {
+  .DirectionsTitle {
+    left: 8rem;
+  }
+}
+
+.roadBackground p {
+  white-space: normal;
+}
+
+.roadBackground span,
+.roadBackground strong {
+  display: inline !important;
+  white-space: normal !important;
+}
+
+.road-page-0 {
+  font-size: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .DirectionsTitle {
+    left: 5rem;
+    font-size: 2.2rem;
+  }
+
+  .roadBackground {
+    width: 40rem;
+    height: 29rem;
+    font-size: 1.45rem;
+    padding: 5rem;
+  }
+
+  .DirectionsBubble {
+    width: 7rem;
+    right: 14.5rem;
+    bottom: 4.3rem;
+  }
+
+  .DirectionsWarningSign {
+    right: 25rem;
+    width: 6rem;
+  }
+}
+
+@media (max-height: 650px) {
+  .DirectionsTitle {
+    left: 5rem;
+    font-size: 2.2rem;
+  }
+
+  .roadBackground {
+    width: 37rem;
+    height: 26rem;
+    font-size: 1.45rem;
+    padding: 5rem;
+    top: 5rem;
+  }
+
+  .DirectionsBubble {
+    width: 7rem;
+    right: 12rem;
+    bottom: 2.3rem;
+  }
+
+  .DirectionsWarningSign {
+    right: 22rem;
+    width: 6rem;
+    bottom: 0rem;
+  }
+  .warning1 {
+    width: 30rem;
+  }
+  .xbtn-Directions {
+  top: 4rem;
+  right: 7.2rem;
+  font-size: 1.7rem;
+}
+}
